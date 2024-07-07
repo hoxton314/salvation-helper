@@ -1,7 +1,3 @@
-import WarlockClassIconSVG from "../../assets/warlock_class_icon.svg"
-import TitanClassIconSVG from "../../assets/titan_class_icon.svg"
-import HunterClassIconSVG from "../../assets/hunter_class_icon.svg"
-
 export const splitText = (text) => {
   const parts = text.split("#")
   if (parts.length === 2) {
@@ -44,17 +40,4 @@ export const getClassColor = (classID) => {
   if (classID === 0) return "#f53543"
   if (classID === 1) return "#006da6"
   return "#f9ad00"
-}
-
-export const getClassSvgPath = (classID) => {
-  switch (classID) {
-    case 0:
-      return TitanClassIconSVG
-    case 1:
-      return HunterClassIconSVG
-    case 2:
-      return WarlockClassIconSVG
-    default:
-      return TitanClassIconSVG
-  }
 }

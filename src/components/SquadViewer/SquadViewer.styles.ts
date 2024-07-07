@@ -61,7 +61,7 @@ export const GuardianContainer = styled.div<{ $classId: number | string }>`
   overflow: hidden;
   border: 2px solid ${({ theme, $classId }) => theme.classColors[$classId]};
   border-radius: 8px;
-  aspect-ratio: 3 / 1;
+  /* aspect-ratio: 3 / 1; */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -77,6 +77,9 @@ export const GuardianBanner = styled.div<{ $emblem_path: string }>`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  height: 100%;
+  width: 100%;
 `
 
 export const GuardianName = styled.div`
@@ -88,6 +91,9 @@ export const GuardianName = styled.div`
   color: ${({ theme }) => theme.buttonTextColor};
   padding-left: 8px;
   overflow: hidden;
+
+  height: 100%;
+  width: 100%;
 
   h2 {
     font-size: 28px;
@@ -104,8 +110,8 @@ export const GuardianClassIcon = styled.div<{ $classId: number | string }>`
   grid-column: 6;
   grid-row: 1;
   object-fit: contain;
-  aspect-ratio: 1 / 1;
   height: 100%;
+  width: 100%;
   padding: 8px;
   color: ${({ theme, $classId }) => theme.classColors[$classId]};
 
@@ -117,5 +123,7 @@ export const GuardianClassIcon = styled.div<{ $classId: number | string }>`
 
 export const ItemIcon = styled.img`
   grid-row: 2;
-  object-fit: contain;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: 100%;
 `

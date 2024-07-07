@@ -17,4 +17,10 @@ export const lightTheme: Theme = {
     hunter: "#006da6",
     warlock: "#f9ad00",
   },
+
+  shapes: {
+    default: "#FFF",
+    active: "#0A21C0",
+    disabled: "#2C2E3A",
+  },
 }

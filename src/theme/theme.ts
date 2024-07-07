@@ -15,4 +15,10 @@ export interface Theme {
     hunter: string
     warlock: string
   }
+
+  shapes: {
+    default: string
+    active: string
+    disabled: string
+  }
 }

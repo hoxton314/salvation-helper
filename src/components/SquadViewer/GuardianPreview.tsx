@@ -6,7 +6,7 @@ import {
   GuardianName,
   ItemIcon,
 } from "./SquadViewer.styles"
-import { getActiveCharacter, getClass, getClassSvgPath } from "./methods"
+import { getActiveCharacter, getClass } from "./methods"
 import { ClassIcon } from "../ClassIcon"
 
 interface GuardianPreviewProps {
@@ -57,7 +57,6 @@ export const GuardianPreview: FC<GuardianPreviewProps> = ({
             height="100%"
           />
         ))}
-      {/* <div>{JSON.stringify(activeCharacter)}</div> */}
     </GuardianContainer>
   )
 }
