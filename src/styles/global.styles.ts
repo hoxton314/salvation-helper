@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+    color: ${({ theme }) => theme.text};
+    font-family: "Roboto", sans-serif;
+
   * {
     box-sizing: border-box;
   }
@@ -33,5 +38,5 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-
+}
 `
